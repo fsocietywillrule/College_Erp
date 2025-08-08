@@ -1,11 +1,11 @@
-const name="ankitmod"
-const password="12345678"
+const name="JITMadmin"
+const password="JITMkct@2025"
 
 exports.LoginAdmin = async (req, res) => {
     
     try{
         const { name, password } = req.body;
-        if (name !== "ankitmod" || password !== "12345678") {
+        if (name !== "JITMadmin" || password !== "JITMkct@2025") {
             return res.status(401).json({ message: 'Invalid credentials' });
         }
         res.status(200).json({
